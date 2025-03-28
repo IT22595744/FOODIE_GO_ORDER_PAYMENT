@@ -13,6 +13,7 @@ import AdminAddBanner from './Pages/AddBanner';
 import AdminDashboard from './Pages/AdminDashboard';
 import AddToCart from './Pages/Order/AddToCart';
 import ViewCart from './Pages/Order/Carts';
+import EditCart from './Pages/Order/EditCartItems';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route exact path="/admin/dashboard/banner/create" element={<AdminAddBanner />} />
           <Route exact path="/add-cart" element={<AddToCart />} />
           <Route path="/view-cart" element={<ViewCart />} />
+          <Route path="/update-cart/:id" element={<EditCart />} />
         </Routes>
       </BrowserRouter>
     </>
