@@ -13,7 +13,7 @@ function AfterNav() {
           <div className="nav_item_user">
             <h3
               className="navitem"
-              onClick={() => (window.location.href = "/afetrhome")}
+              onClick={() => (window.location.href = "/home")}
             >
               Home
             </h3>

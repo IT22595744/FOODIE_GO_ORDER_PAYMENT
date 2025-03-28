@@ -12,6 +12,7 @@ import AdminCreateProduct from './Pages/CreateMenu';
 import AdminAddBanner from './Pages/AddBanner';
 import AdminDashboard from './Pages/AdminDashboard';
 import AddToCart from './Pages/Order/AddToCart';
+import ViewCart from './Pages/Order/Carts';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route exact path="/home" element={<Home />} />
           {/* <Route exact path="/signup" element={<SignUp />} />
           <Route exact path="/signin" element={<SignIn />} /> */}
           <Route exact path="/user/dashboard" element={<UserDashboard />} />
@@ -27,6 +29,7 @@ function App() {
           <Route exact path="/admin/dashboard/product/create" element={<AdminCreateProduct />} />
           <Route exact path="/admin/dashboard/banner/create" element={<AdminAddBanner />} />
           <Route exact path="/add-cart" element={<AddToCart />} />
+          <Route path="/view-cart" element={<ViewCart />} />
         </Routes>
       </BrowserRouter>
     </>
