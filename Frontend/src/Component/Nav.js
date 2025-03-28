@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../Assets/logo.jpg";
+import Logo from "../Assets/Foodie_Go_Logo.png";
 import "./nav.css";
 import { FaShoppingCart } from "react-icons/fa";
 function AfterNav() {
